@@ -6,8 +6,8 @@ if (isset($_POST["username"])) {
     $nama = $_POST["nama"];
     $level = "admin";
 
-    $insert = mysqli_query($koneksi, "INSERT INTO user(nama,username,password,level) VALUES('$nama', '$username', '$password', '$level')");
-
+    $insert = mysqli_query($koneksi, "INSERT INTO user(nama,username,password,level) 
+    VALUES('$nama', '$username', '$password', '$level')");
 
     if ($insert) {
         echo "<script>alert('Register Berhasil');location.href='login.php'</script>";
