@@ -10,7 +10,7 @@ if (isset($_POST['nama_produk'])) {
     harga = '$harga', stock = '$stock' WHERE id_produk = $id");
 
     if ($query) {
-        echo "<script>alert('Ubah data Berhasil')</script>";
+        echo "<script>alert('Ubah data Berhasil'); location.href='?page=produk'</script>";
     } else {
         echo "<script>alert('Ubah data Gagal')</script>";
     }
