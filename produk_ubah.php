@@ -31,21 +31,31 @@ $data = mysqli_fetch_array($query);
             <tr>
                 <td width="200">Nama Produk</td>
                 <td width="1">:</td>
-                <td><input type="text" class="form-control" name="nama_produk" value="<?php echo $data['nama_produk'] ?>"></td>
+                <td>
+                    <input type="text" class="form-control" name="nama_produk" value="
+                    <?php echo $data['nama_produk'] ?>
+                    ">
+                </td>
             </tr>
 
             <tr>
                 <td>Harga</td>
                 <td>:</td>
                 <td>
-                    <input type="number" class="form-control" name="harga" step="0" value="<?php echo $data['harga'] ?>">
+                    <input type="number" class="form-control" name="harga" step="0" value="
+                        <?php echo $data['harga'] ?>
+                    ">
                 </td>
             </tr>
 
             <tr>
                 <td>Stock</td>
                 <td>:</td>
-                <td><input type="number" class="form-control" name="stock" step="0" value="<?php echo $data['stock'] ?>"></td>
+                <td>
+                    <input type="number" class="form-control" name="stock" step="0" value="
+                        <?php echo $data['stock'] ?>
+                    ">
+                </td>
             </tr>
 
             <tr>
