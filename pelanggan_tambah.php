@@ -3,7 +3,8 @@ if (isset($_POST['nama_pelanggan'])) {
     $nama = $_POST['nama_pelanggan'];
     $alamat = $_POST['alamat'];
     $no_telepon = $_POST['no_telepon'];
-    $query = mysqli_query($koneksi, "INSERT INTO pelanggan(nama_pelanggan, alamat, no_telepon) VALUES ('$nama', '$alamat', '$no_telepon')");
+    $query = mysqli_query($koneksi, "INSERT INTO pelanggan(nama_pelanggan, alamat, no_telepon) 
+    VALUES ('$nama', '$alamat', '$no_telepon')");
     if ($query) {
         echo "<script>alert('Tambah data Berhasil')</script>";
     } else {
