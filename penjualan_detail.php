@@ -24,7 +24,8 @@ $data = mysqli_fetch_array($query);
             </tr>
 
             <?php
-            $queryProduk = mysqli_query($koneksi, "SELECT * FROM detail_penjualan LEFT JOIN produk ON produk.id_produk = detail_penjualan.id_produk WHERE id_penjualan= $id");
+            $queryProduk = mysqli_query($koneksi, "SELECT * FROM detail_penjualan LEFT JOIN 
+            produk ON produk.id_produk = detail_penjualan.id_produk WHERE id_penjualan= $id");
             while ($dataProduk = mysqli_fetch_array($queryProduk)) {
 
             ?>
