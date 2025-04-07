@@ -71,7 +71,8 @@ if (isset($_POST['id_pelanggan'])) {
                     <td><?php echo $dataProduk['nama_produk'] . ' (stock : ' . $dataProduk['stock'] . ')'; ?></td>
                     <td>:</td>
                     <td>
-                        <input type="number" class="form-control" name="produk[<?php echo $dataProduk['id_produk'] ?>]" step="0" value="0" max="<?php echo $dataProduk['stock']; ?>">
+                        <input type="number" class="form-control" name="produk[<?php echo $dataProduk['id_produk'] ?>]" 
+                            step="0" value="0" max="<?php echo $dataProduk['stock']; ?>">
                     </td>
                 </tr>
             <?php
