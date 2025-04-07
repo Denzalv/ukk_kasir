@@ -1,3 +1,30 @@
-assets/
-css/
-js/
+# Abaikan folder frontend statis
+/assets/
+/css/
+/js/
+
+# Abaikan file dan folder sistem
+.DS_Store
+Thumbs.db
+
+# Abaikan file konfigurasi lokal
+.env
+*.env
+*.local
+
+# Abaikan cache & log
+*.log
+cache/
+tmp/
+
+# Abaikan file editor
+.vscode/
+.idea/
+*.swp
+
+# Abaikan vendor jika tidak menggunakan composer di Git
+/vendor/
+
+# Abaikan database lokal (jika disimpan sebagai file)
+*.sql
+*.sqlite
