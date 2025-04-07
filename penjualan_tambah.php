@@ -20,7 +20,8 @@ if (isset($_POST['id_pelanggan'])) {
             $sub = $val * $pr['harga'];
             $total += $sub;
 
-            $query = mysqli_query($koneksi, "INSERT INTO detail_penjualan(id_penjualan, id_produk, jumlah_produk, sub_total) VALUES ($id_penjualan, $key, $val, $sub)");
+            $query = mysqli_query($koneksi, "INSERT INTO detail_penjualan(id_penjualan, id_produk, jumlah_produk, sub_total) 
+            VALUES ($id_penjualan, $key, $val, $sub)");
             $updateProduk = mysqli_query($koneksi, "UPDATE produk SET stock=stock-$val WHERE id_produk=$key");
         }
     }
